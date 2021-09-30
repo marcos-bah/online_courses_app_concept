@@ -13,6 +13,7 @@ class AppWidget extends StatelessWidget {
       title: 'Online Courses App Concept',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.bg,
         primarySwatch: Colors.blue,
         fontFamily: GoogleFonts.poppins().fontFamily,
         primaryColor: AppColors.primary,

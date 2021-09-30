@@ -22,23 +22,38 @@ class HomeSmallView extends StatelessWidget {
             const Spacer(
               flex: 1,
             ),
-            Text(
-              "Hey Leslee,\nthere’s a new course about Figma",
-              style: Theme.of(context).textTheme.headline1,
-              textAlign: TextAlign.center,
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 20,
+              ),
+              child: Text(
+                "Hey Leslee,\nthere’s a new course about Figma",
+                style: Theme.of(context).textTheme.headline1,
+                textAlign: TextAlign.center,
+              ),
             ),
             const Spacer(
               flex: 1,
             ),
-            Text(
-              "Find out how our new matching tool can help you learn another way",
-              style: Theme.of(context).textTheme.headline5,
-              textAlign: TextAlign.center,
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 20,
+              ),
+              child: Text(
+                "Find out how our new matching tool can help you learn another way",
+                style: Theme.of(context).textTheme.headline5,
+                textAlign: TextAlign.center,
+              ),
             ),
             const Spacer(
               flex: 6,
             ),
-            const ButtonWidget(text: "Discover the course"),
+            const Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 20,
+              ),
+              child: ButtonWidget(text: "Discover the course"),
+            ),
             const Spacer(
               flex: 2,
             ),
