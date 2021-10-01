@@ -14,7 +14,7 @@ class AppWidget extends StatelessWidget {
       title: 'Online Courses App Concept',
       debugShowCheckedModeBanner: false,
       theme: themeDataLight,
-      initialRoute: '/payment',
+      initialRoute: '/',
       routes: {
         '/': (context) => const HomeView(),
         '/your-courses': (context) => const MyCourseView(),

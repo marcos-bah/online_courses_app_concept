@@ -4,9 +4,8 @@ class PizzaShapePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint()
-      ..color = Colors.white38
+      ..color = Colors.white.withOpacity(0.05)
       ..strokeWidth = 5
-      ..blendMode = BlendMode.softLight
       ..style = PaintingStyle.fill
       ..strokeCap = StrokeCap.round;
 

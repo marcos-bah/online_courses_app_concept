@@ -48,7 +48,12 @@ class HomeLargeView extends StatelessWidget {
                   const Spacer(
                     flex: 4,
                   ),
-                  const ButtonWidget(text: "Discover the course"),
+                  ButtonWidget(
+                    text: "Discover the course",
+                    onPressed: () {
+                      Navigator.popAndPushNamed(context, "/your-courses");
+                    },
+                  ),
                   const Spacer(
                     flex: 1,
                   ),

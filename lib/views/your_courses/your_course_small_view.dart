@@ -143,6 +143,9 @@ class MyCourseSmallView extends StatelessWidget {
                         ],
                       ),
                     ),
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/payment");
+                    },
                   ),
                 ),
               ),

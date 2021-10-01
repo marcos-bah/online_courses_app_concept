@@ -4,10 +4,10 @@ class RRectAngShapePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint()
+      ..color = Colors.white.withOpacity(0.05)
       ..strokeWidth = 5
       ..style = PaintingStyle.fill
-      ..color = Colors.white38
-      ..blendMode = BlendMode.softLight;
+      ..strokeCap = StrokeCap.round;
 
     canvas.rotate(1.32);
     canvas.drawRRect(

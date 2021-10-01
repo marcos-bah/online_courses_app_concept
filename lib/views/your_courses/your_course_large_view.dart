@@ -148,6 +148,9 @@ class MyCourseLargeView extends StatelessWidget {
                           ],
                         ),
                       ),
+                      onPressed: () {
+                        Navigator.pushNamed(context, "/payment");
+                      },
                     ),
                   ),
                 ),

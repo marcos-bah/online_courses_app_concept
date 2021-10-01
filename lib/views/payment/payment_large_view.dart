@@ -29,7 +29,9 @@ class PaymentLargeView extends StatelessWidget {
                   width: 42,
                   height: 42,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                     child: const Icon(
                       Icons.chevron_left,
                       color: AppColors.primary,

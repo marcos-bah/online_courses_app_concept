@@ -48,11 +48,16 @@ class HomeSmallView extends StatelessWidget {
             const Spacer(
               flex: 6,
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(
+            Padding(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 20,
               ),
-              child: ButtonWidget(text: "Discover the course"),
+              child: ButtonWidget(
+                text: "Discover the course",
+                onPressed: () {
+                  Navigator.popAndPushNamed(context, "/your-courses");
+                },
+              ),
             ),
             const Spacer(
               flex: 2,
