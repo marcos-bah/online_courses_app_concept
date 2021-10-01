@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-class StaticsWidget extends StatelessWidget {
+class StatisticsWidget extends StatelessWidget {
   final String title;
   final String subtitle;
-  const StaticsWidget({Key? key, required this.title, required this.subtitle})
+  const StatisticsWidget(
+      {Key? key, required this.title, required this.subtitle})
       : super(key: key);
 
   @override
