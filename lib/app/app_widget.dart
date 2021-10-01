@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:online_courses_app_concept/app/app_themes.dart';
 import 'package:online_courses_app_concept/views/home/home_view.dart';
-import 'package:online_courses_app_concept/views/my_courses/my_course.view.dart';
+import 'package:online_courses_app_concept/views/your_courses/your_course_view.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
