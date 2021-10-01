@@ -5,12 +5,14 @@ class ButtonWidget extends StatelessWidget {
   final double width;
   final double height;
   final void Function()? onPressed;
+  final Widget? textAlt;
   const ButtonWidget({
     Key? key,
     required this.text,
-    this.height = 60,
+    this.height = 58,
     this.width = 280,
     this.onPressed,
+    this.textAlt,
   }) : super(key: key);
 
   @override
@@ -20,11 +22,12 @@ class ButtonWidget extends StatelessWidget {
       height: height,
       child: ElevatedButton(
         onPressed: onPressed,
-        child: Text(
-          text,
-          style: Theme.of(context).textTheme.headline4,
-          textAlign: TextAlign.center,
-        ),
+        child: textAlt ??
+            Text(
+              text,
+              style: Theme.of(context).textTheme.headline4,
+              textAlign: TextAlign.center,
+            ),
       ),
     );
   }
