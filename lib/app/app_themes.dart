@@ -8,28 +8,28 @@ ThemeData themeDataLight = ThemeData(
   primarySwatch: Colors.blue,
   fontFamily: GoogleFonts.poppins().fontFamily,
   primaryColor: AppColors.primary,
-  textTheme: const TextTheme(
-    subtitle2: TextStyle(
+  textTheme: GoogleFonts.poppinsTextTheme().copyWith(
+    subtitle2: const TextStyle(
       fontSize: 13,
       fontWeight: FontWeight.w400,
       color: Colors.black,
     ),
-    headline1: TextStyle(
+    headline1: const TextStyle(
       fontSize: 22,
       fontWeight: FontWeight.w600,
       color: AppColors.primary,
     ),
-    headline4: TextStyle(
+    headline4: const TextStyle(
       fontWeight: FontWeight.w300,
       fontSize: 17,
       color: Colors.white,
     ),
-    headline5: TextStyle(
+    headline5: const TextStyle(
       fontWeight: FontWeight.w300,
       fontSize: 16,
       color: AppColors.secondary,
     ),
-    headline6: TextStyle(
+    headline6: const TextStyle(
       fontSize: 15,
       fontWeight: FontWeight.w500,
       color: AppColors.gray30,
